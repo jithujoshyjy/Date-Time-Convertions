@@ -1,0 +1,150 @@
+body {
+	font-family: sans-serif;
+	background-color: ghostwhite;
+}
+
+.calc-types-container {
+	display: flex;
+	flex-wrap: wrap;
+	flex-shrink: 1;
+	justify-content: center;
+	margin-top: 50px;
+	gap: 30px;
+}
+
+.calc-wrapper {
+	padding: 10px 25px 0 25px;
+	border-radius: 5px;
+	min-width: 300px;
+	min-height: 200px;
+	box-shadow: 2px 2px 6px 2px hsla(0, 0%, 0%, 0.15);
+}
+
+.calc-wrapper:first-of-type {
+	background-image: linear-gradient(to bottom right, hsl(0, 53%, 50%), hsl(0, 53%, 80%) 100%);
+}
+
+.calc-wrapper:nth-of-type(2) {
+	background-image: linear-gradient(to bottom right, hsl(225, 53%, 50%), hsl(225, 53%, 80%) 100%);
+}
+
+.calc-wrapper:nth-of-type(3) {
+	background-image: linear-gradient(to bottom right, hsl(50, 53%, 50%), hsl(50, 53%, 80%) 100%);
+}
+
+.calc-heading {
+	color: white;
+	font-size: 20px;
+	margin-bottom: 50px;
+}
+
+input.calc-field,
+select.operation-selector,
+select.time-of-day-selector {
+	font-size: 16px;
+	border: none;
+	outline: none;
+	padding: 8px;
+	border-radius: 2.5px;
+	background-color: ghostwhite;
+}
+
+select.operation-selector, select.time-of-day-selector {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	text-overflow: '';
+	text-align: center;
+}
+
+select.time-of-day-selector {
+	font-size: 14px;
+	font-family: monospace;
+	border-radius: 0px;
+	border-top-right-radius: 2.5px;
+	border-bottom-right-radius: 2.5px;
+}
+
+input.calc-field-left,
+div.calc-fields-right {
+	width: 112px;
+}
+
+.calc-fields-right {
+	display: inline-flex;
+}
+
+.calc-fields-right > input.calc-field {
+	font-size: inherit;
+	font-family: monospace;
+	width: 15px;
+	border-radius: 0px;
+}
+
+.date-calc-fields-right > input.calc-date-field {
+	border-top-left-radius: 2.5px;
+	border-bottom-left-radius: 2.5px;
+}
+
+.date-calc-fields-right > input.calc-year-field {
+	width: 35px;
+	border-top-right-radius: 2.5px;
+	border-bottom-right-radius: 2.5px;
+}
+
+.calc-wrapper:nth-of-type(3) > input.calc-field {
+	font-size: 10px;
+	padding: 13px;
+}
+
+.date-time-calc-fields-right {
+	font-size: 10px;
+}
+
+.date-time-calc-fields-right > input.calc-date-field {
+	padding-left: 8px;
+}
+
+.date-time-calc-fields-right > input.calc-field {
+	width: 12px;
+	padding-left: 5px;
+	padding-right: 0px;
+}
+
+.date-time-calc-fields-right > input.calc-year-field {
+	width: 22px;
+}
+
+.date-time-calc-fields-right > select.time-of-day-selector {
+	font-size: 10px;
+}
+
+.calc-result {
+	display: flex;
+	margin-top: 20px;
+}
+
+button.show-calc-result {
+	font-size: 18px;
+	padding: 5px 10px;
+	border: none;
+	border-top-left-radius: 2.5px;
+	border-bottom-left-radius: 2.5px;
+}
+
+button:active {
+	background-color: lightgrey;
+}
+
+.calc-result-tray {
+	width: 100%;
+	padding: 8px 12px;
+	font-size: 14px;
+	box-sizing: border-box;
+	background-color: white;
+	border-top-right-radius: 2.5px;
+	border-bottom-right-radius: 2.5px;
+}
+
+.calc-result-tray:empty {
+	display: none;
+}

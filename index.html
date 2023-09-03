@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Date Time Convertions</title>
+	<link rel="stylesheet" href="style.css" />
+	<script type="module" src="script.js"></script>
+</head>
+
+<body>
+	<div class="calc-types-container">
+		<div class="calc-wrapper date-calc-wrapper">
+			<h2 class="calc-heading">Date Convertion</h2>
+			<input class="calc-field calc-field-left date-calc-field-left" type="date" />
+			<select class="operation-selector">
+				<option value="plus" selected>+</option>
+				<option value="minus">-</option>
+				<option value="diff">diff</option>
+			</select>
+			<div class="calc-fields-right date-calc-fields-right">
+				<input class="calc-field calc-date-field" inputmode="numeric" placeholder="dd" />
+				<input class="calc-field calc-month-field" inputmode="numeric" placeholder="mm" />
+				<input class="calc-field calc-year-field" inputmode="numeric" placeholder="yyyy" />
+			</div>
+			<div class="calc-result">
+				<button class="show-calc-result calc-result-btn">=</button>
+				<div class="calc-result-tray"></div>
+			</div>
+		</div>
+		<div class="calc-wrapper time-calc-wrapper">
+			<h2 class="calc-heading">Time Convertion</h2>
+			<input class="calc-field calc-field-left time-calc-field-left" type="time" />
+			<select class="operation-selector">
+				<option value="plus" selected>+</option>
+				<option value="minus">-</option>
+				<option value="diff">diff</option>
+				<option value="to-cst">to cst</option>
+				<option value="to-est">to est</option>
+				<option value="to-ist">to ist</option>
+				<option value="to-utc">to utc</option>
+			</select>
+			<div class="calc-fields-right time-calc-fields-right">
+				<input class="calc-field calc-hour-field" inputmode="numeric" placeholder="hh" />
+				<input class="calc-field calc-minute-field" inputmode="numeric" placeholder="mm" />
+				<select class="time-of-day-selector">
+					<option value="am" selected>am</option>
+					<option value="pm">pm</option>
+				</select>
+			</div>
+			<div class="calc-result">
+				<button class="show-calc-result calc-result-btn">=</button>
+				<div class="calc-result-tray"></div>
+			</div>
+		</div>
+		<div class="calc-wrapper date-time-calc-wrapper">
+			<h2 class="calc-heading">DateTime Convertion</h2>
+			<input class="calc-field calc-field-left date-time-calc-field-left" type="datetime-local" />
+			<select class="operation-selector">
+				<option value="plus" selected>+</option>
+				<option value="minus">-</option>
+				<option value="diff">diff</option>
+				<option value="to-cst">to cst</option>
+				<option value="to-est">to est</option>
+				<option value="to-ist">to ist</option>
+				<option value="to-utc">to utc</option>
+			</select>
+			<div class="calc-fields-right date-time-calc-fields-right">
+				<input class="calc-field calc-date-field" inputmode="numeric" placeholder="dd" />
+				<input class="calc-field calc-month-field" inputmode="numeric" placeholder="mm" />
+				<input class="calc-field calc-year-field" inputmode="numeric" placeholder="yyyy" />
+				<input class="calc-field calc-hour-field" inputmode="numeric" placeholder="hh" />
+				<input class="calc-field calc-minute-field" inputmode="numeric" placeholder="mm" />
+				<select class="time-of-day-selector">
+					<option value="am" selected>am</option>
+					<option value="pm">pm</option>
+				</select>
+			</div>
+			<div class="calc-result">
+				<button class="show-calc-result calc-result-btn">=</button>
+				<div class="calc-result-tray"></div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
