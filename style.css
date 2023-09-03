@@ -148,3 +148,7 @@ button:active {
 .calc-result-tray:empty {
 	display: none;
 }
+
+.date-time-calc-wrapper > .calc-result > .calc-result-tray {
+	font-size: 10px;
+}
