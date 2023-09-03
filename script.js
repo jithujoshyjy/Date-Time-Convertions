@@ -80,7 +80,7 @@ on("click", calcTimeResultBtn, _ => {
 
 	const hourValue = Number(calcTimeHourField.value.trim().replace(/^0+/, ''))
 	const minuteValue = Number(calcTimeMinuteField.value.trim().replace(/^0+/, ''))
-	const timeOfDayValue = Number(calcTimeTimeOfDaySelector.value)
+	const timeOfDayValue = calcTimeTimeOfDaySelector.value
 
 	const result = dispatchTimeOperation(time, operation, [hourValue, minuteValue, timeOfDayValue])
 	calcTimeResultTray.textContent = result
